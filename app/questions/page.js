@@ -234,9 +234,8 @@ export default function Home() {
         </Question>
         <Question>
           <h2>
-            What are the key skills you (would) bring to an asynchronous and
-            remote work environment? What key skills do you feel you need to
-            improve for you to fully thrive in such an environment?
+            7. What are the key skills you (would) bring to an asynchronous and
+            remote work environment?
           </h2>
           <p>
             In an asynchronous and remote work environment, I find that my blend
@@ -275,7 +274,7 @@ export default function Home() {
         </Question>
         <Question>
           <h2>
-            Which season of life are you currently in and what are your career
+            8. Which season of life are you currently in and what are your career
             goals?
           </h2>
           <p>
