@@ -1,0 +1,53 @@
+.card {
+  padding: 1rem 1.2rem;
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  border-radius: 12px;
+  transition: all 200ms;
+  @media (max-width: 700px) {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    min-height: 120px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    transition: all 200ms;
+  }
+}
+
+.card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  span {
+    font-family: unset !important;
+  }
+}
+
+.card p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-wrap: balance;
+
+  @media (max-width: 700px) {
+    max-width: unset;
+  }
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover .arrow {
+    transform: translateX(4px);
+  }
+}
